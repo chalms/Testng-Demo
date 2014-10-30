@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestIndex">
+
+  <test name="firstTest">
+    <classes>
+      <class name="test.java.IndexTest"/>
+    </classes>
+  </test>
+
+<!--   <test name="order">
+    <classes>
+      <class name="test.java.TestConfig" />
+      <class name="test.java.NamedExample" />
+    </classes>
+  </test> -->
+
+<!--   <test name="database">
+    <classes>
+      <class name="test.java.TestConfig" />
+      <class name="test.java.TestDatabase" />
+    </classes>
+  </test>
+ -->
+</suite>
