@@ -1,0 +1,610 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.5em;
+    background: #fefefe;
+    width: 45em;
+    margin: 10px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    outline: 1300px solid #f8f8f8;
+}
+
+.waiting-circles{ padding: 0; display: inline-block;
+    position: relative; width: 60px; height: 60px;}
+.waiting-circles-element{ margin: 0 2px 0 0; background-color: #e4e4e4;
+    border: solid 1px #f4f4f4;
+    width: 10px; height: 10px; display: inline-block;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;}
+.waiting-circles-play-0{ background-color: #9EC45F; }
+.waiting-circles-play-1{ background-color: #aEd46F; }
+.waiting-circles-play-2{ background-color: #bEe47F; }
+
+.nav ul {
+  list-style: none;
+  background-color: #ededed;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  display: block;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #fff;
+}
+
+.nav a.active {
+  background-color: #000;
+  color: #fff;
+  cursor: default;
+}
+
+.nav li {
+    float: left;
+    width: 20%;
+}
+.nav ul {
+    overflow: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav li.active {
+    background-color: #dcdcdc;
+}
+
+a {
+    color: #06d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #faa700;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+::-moz-selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: black;
+}
+
+::selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: black;
+}
+
+a::-moz-selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #0645ad;
+}
+
+a::selection {
+    background: rgba(255, 255, 0, 0.3);
+    color: #0645ad;
+}
+
+.headeranchor-link {
+    color: #111;
+    border: 0;
+    margin-left: -20px;
+    padding-right: 6px;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.headeranchor {
+    font: normal normal 16px octicons-anchor;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.headeranchor-link:hover,
+.headeranchor-link:visited,
+.headeranchor-link:active {
+    text-decoration: none;
+    color: #4d4d4c;
+}
+
+.headeranchor-link:hover .headeranchor:before,
+h1:hover .headeranchor:before,
+h2:hover .headeranchor:before,
+h3:hover .headeranchor:before,
+h4:hover .headeranchor:before,
+h5:hover .headeranchor:before,
+h6:hover .headeranchor:before {
+    content: '\f05c';
+}
+
+abbr {
+    cursor: pointer;
+}
+
+p {
+    margin: 1em 0;
+}
+
+img {
+    max-width: 100%;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    color: #111;
+    line-height: 1.7;
+    position: relative;
+}
+
+h4,h5,h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.9em;
+}
+
+blockquote {
+    color: #666666;
+    margin: 0;
+    padding-left: 3em;
+    border-left: 0.5em #EEE solid;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0;
+}
+
+pre, code, kbd, samp {
+    color: #000;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 0.88em;
+    background-color: #F8F8F8;
+    border: 1px solid #CCC;
+}
+
+pre {
+    padding: 10px;
+    overflow: auto;
+}
+
+code {
+    padding: 0 3px 0 3px;
+}
+
+pre code {
+    border: 0;
+    padding: 0;
+}
+
+.admonition {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 0.88em;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 10px auto;
+}
+
+.admonition p {
+    padding: 0;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.admonition-title {
+    font-weight: bold;
+}
+
+.admonition.attention {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    border: 1px solid #4F8A10;
+}
+
+.admonition.caution {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    border: 1px solid #9F6000;
+}
+
+.admonition.hint {
+    color: #00529B;
+    background-color: #BDE5F8;
+    border: 1px solid #00529B;
+}
+
+.admonition.danger {
+    color: #D8000C;
+    background-color: #FFBABA;
+    border: 1px solid #D8000C;
+}
+
+.admonition.note {
+    color: #888888;
+    background-color: #F8F8F8;
+    border: 1px solid #888888;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+ins {
+    background: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+dfn {
+    font-style: italic;
+}
+
+ul, ol {
+    padding-left: 30px;
+}
+
+li p:last-child {
+    margin: 0;
+}
+
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item input {
+    float: left;
+    margin-left: -20px;
+    margin-top: 6px;
+}
+
+dt {
+    font-weight: bold;
+    font-style: italic;
+}
+
+dd {
+    margin: 0 0 0 2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+}
+
+table tr {
+    background-color: #fefefe;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 6px 13px;
+}
+
+.codehilitetable {
+    border: 0;
+    border-spacing: 0;
+}
+
+.linenos, .code, .codehilitetable td {
+    border: 0;
+    padding: 0;
+}
+
+td:not(.linenos) .linenodiv {
+    padding: 0 !important;
+}
+
+.code {
+    width: 100%;
+}
+
+.linenos div pre, .linenodiv pre {
+    border: 0;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.code div pre {
+    border: 0;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+@media only screen and (min-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        filter: none !important;
+        -ms-filter: none !important;
+    }
+    body {
+        font-size: 12pt;
+        max-width: 100%;
+        outline: none;
+        border: 0;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    .headeranchor-link {
+        display: none;
+    }
+    hr {
+        height: 1px;
+        border: 0;
+        border-bottom: 1px solid black;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        padding-right: 1em;
+        page-break-inside: avoid;
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
+</style><title>walkthrough</title></head><body><article class="markdown-body"><p><strong>Setting Up JAVA_HOME environment variable</strong></p>
+<pre><code class="bash">    $ echo $JAVA_HOME # &lt;- show current location of JAVA_HOME
+    # if nothing is diplayed
+    $ vim ~/.bash_profile
+</code></pre>
+
+<p>&lsquo;vim&rsquo; will open current bash_profile, or create one. The ~./bash_profile file  will display (and set) the users custom environment variables. The vim command displays your .bash_profile and thus displayed my computers environment variables. This is my .bash_profile:</p>
+<pre><code class="bash">export PATH=/usr/local/bin:$PATH
+[[ -s &quot;$HOME/.profile&quot; ]] &amp;&amp; source &quot;$HOME/.profile&quot; # Load the default .profile
+[[ -s &quot;$HOME/.rvm/scripts/rvm&quot; ]] &amp;&amp; source &quot;$HOME/.rvm/scripts/rvm&quot; # Load RVM into a shell session *as a function*
+export PATH=/usr/local/git/bin:$PATH
+export PGDATA=/usr/share/postgresql/data
+export PATH=/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/share/postgresql/data:$PATH
+</code></pre>
+
+<p>To edit your .bash_profile using &lsquo;vim&rsquo;, hit &lsquo;a&rsquo;. Now scroll down to the bottom and append the following:</p>
+<pre><code class="bash">export JAVA_HOME=$(/usr/libexec/java_home)
+</code></pre>
+
+<p>Thats it! now hit &lsquo;esc&rsquo; to exit insert mode, and then &lsquo;:&rsquo; to enter a the vim command mode. Type &lsquo;wq&rsquo; to write (&lsquo;w&rsquo;) the new text, then quit (&lsquo;q&rsquo;) editing the document. We can now test if we added the $JAVA_HOME to the classpath. Yours should look something like the following:</p>
+<pre><code class="bash">$ echo $JAVA_HOME
+/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+</code></pre>
+
+<p>For more vim commands, visit: <a href="http://worldtimzone.com/res/vi.html">http://worldtimzone.com/res/vi.html</a></p>
+<h3 id="setting-up-testng"><a name="user-content-setting-up-testng" href="#setting-up-testng" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Setting Up TestNG</h3>
+<p>In order to set up TestNG correctly, first download the TESTNG jar file from the following link: <a href="http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22testng%22">http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22testng%22</a></p>
+<p>Then save somewhere on your computer. I saved mine as ~/Downloads/testng-6.8.8. Yours may be a different version than mine, so just change &lsquo;6.8.8&rsquo; to your version for the rest of the commands.</p>
+<p>Now, create a folder on your computer to store testng. My folder was /Library/TESTNG. You can create your folder with the command.</p>
+<pre><code class="bash">$ mkdir /Library/TESTNG
+</code></pre>
+
+<p>Then copy the newly downloaded testng file to your new directory.</p>
+<pre><code class="bash">$ cp ~/Downloads/testng-6.8.8 /Library/TESTNG/testng-6.8.8
+</code></pre>
+
+<p>Now, you want to add this testng JAR file to the end of your java project classpath. In MAC OSX this classpath is defined by the &lsquo;$CLASSPATH&rsquo; environment variable. You can append the testng framework this environment variable by performing the following:</p>
+<pre><code class="bash">$ export CLASSPATH=$CLASSPATH:/Library/TESTNG/testng-6.8.8.jar
+</code></pre>
+
+<h3 id="automatically-display-test-results"><a name="user-content-automatically-display-test-results" href="#automatically-display-test-results" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Automatically Display Test Results</h3>
+<p>When I enter the command,</p>
+<pre><code class="bash">$ runtests
+</code></pre>
+
+<p>from my project folder, chrome automatically displays the test results to me. It also saves the test results as a page that can be served up by the website. In order to do this, first run:</p>
+<pre><code class="bash">$ mvn test
+</code></pre>
+
+<p>This will create a new folder in your &lsquo;/target&rsquo; directory named &lsquo;/surefire-reports&rsquo;. If you open the file &lsquo;/target/surefire-reports/index.html&rsquo; in chrome, it will display the html results of your last unit test.</p>
+<p>Create a folder for the test results to be served as a webpage:</p>
+<pre><code class="bash">$ mkdir src/main/webapp/test-results
+</code></pre>
+
+<p>Now, lets build the executable.</p>
+<p><strong>Creating the .sh file</strong></p>
+<p>Create a file in the root your project folder called &lsquo;test.sh&rsquo;. Make this folder and executable and open it in sublime. This will be used to run the processes required to write and display test result content.</p>
+<pre><code class="bash">$ touch test.sh
+$ chmod +x test.sh
+$ sublime test.sh
+</code></pre>
+
+<p>We now want to fill this shell script with some code to automate running the test and displaying the outputs. We need to add some conditionals to avoid attempting to display or copy the test contents if they are not created due to a failure in maven.</p>
+<p>In test.sh:</p>
+<pre><code class="bash">  #!/bin/sh
+  if mvn test ; then
+    if cp -r target/surefire-reports/* src/main/webapp/test-results ; then
+      open src/main/webapp/test-results/index.html
+    fi
+  fi
+</code></pre>
+
+<p>The line &lsquo;#!/bin/sh&rsquo; tells the computer that the file is a shell script. &lsquo;mvn test&rsquo; runs the test cases. The command &lsquo;cp -r target/surefire-reports/* src/main/webapp/test-results&rsquo; copy&rsquo;s the contents of the surefire output directory to a directory that can be easily served by the web app. The line &lsquo;open src/main/webapp/test-results/index.html&rsquo; opens the &lsquo;index.html&rsquo; file from that directory in your browser.</p>
+<p>You can test that this file works correctly by entering the command:</p>
+<pre><code class="bash">$ ./test.sh
+</code></pre>
+
+<p><strong>Creating a set of shell commands to run in any java project</strong></p>
+<p>To save this file as a shell command, there are a few things we must do. First, create an area in your computer where you want to store call shell commands for your java projects. I set mine to &lsquo;.java&rsquo;.</p>
+<pre><code class="bash">$ mkdir ~/.java
+</code></pre>
+
+<p>Next, create a folder called &lsquo;bin&rsquo; inside the &lsquo;.java&rsquo; folder, where you will put all your executable files.</p>
+<pre><code class="bash">$ mkdir ~/.java/bin
+</code></pre>
+
+<p>Then add this new &lsquo;bin&rsquo; folder to your $PATH environment variable. This $PATH environment variable stores the custom commands from different &lsquo;.sh&rsquo; files, in many different &lsquo;bin&rsquo; folders across your computer. You can append to the PATH variable with the following command: &lsquo;PATH=$PATH:{absolute path to the bin folder you want to add}&rsquo;. So for my &lsquo;.java/bin&rsquo;, I ran the following command:</p>
+<pre><code class="bash">$ PATH=$PATH:/Users/achalmers/.java/bin
+</code></pre>
+
+<p><strong>Add the .sh file your bin</strong></p>
+<p>The last step is to move our &lsquo;./tests.sh&rsquo; file to our newly created bin, and give this command the name we desire. When placing the tests.sh in my &lsquo;bin&rsquo; folder, I will no longer need the &lsquo;.sh&rsquo; at the end to run it. I can effectively call it whatever I want, and in this case I chose the name <em>runtests</em>.</p>
+<p>All you have to do is move the &lsquo;./tests.sh&rsquo; file to the new &lsquo;bin&rsquo; with your custom filename:</p>
+<pre><code class="bash">$ mv tests.sh /Users/achalmers/.java/bin/runtests
+</code></pre>
+
+<p><strong>Now run it.</strong></p>
+<p>Enter the command:</p>
+<pre><code class="bash">$ runtests
+</code></pre>
+
+<p><em>And Voila.</em></p></article></body></html>

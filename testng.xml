@@ -1,24 +1,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="TestIndex">
+<suite name="Server">
 
-  <test name="firstTest">
+<!--   <class name="WebTestFactory" />
+-->
+<!--   <groups>
+    <run>
+      <include name="serverTests"/>
+    </run>
     <classes>
-      <class name="test.java.IndexTest"/>
+      <class name="test.java.StartTest"/>
     </classes>
-  </test>
+  </groups> -->
 
-<!--   <test name="order">
-    <classes>
-      <class name="test.java.TestConfig" />
-      <class name="test.java.NamedExample" />
-    </classes>
-  </test> -->
+<!--   <test name="Server">
+    <groups>
+      <dependencies>
+        <group name="testServer" depends-on="testStart" />
+        <group name="stopTests" depends-on="serverTests" />
+      </dependencies>
+    </groups>
+  </test -->
 
-<!--   <test name="database">
+
+<!--   <test name="testStop", dependsOnGroups="serverTests">
     <classes>
-      <class name="test.java.TestConfig" />
-      <class name="test.java.TestDatabase" />
+      <class name="test.java.StopTest"/>
     </classes>
   </test>
  -->

@@ -5,11 +5,11 @@
    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
    version="2.5">
   <servlet>
-    <servlet-name>Demo</servlet-name>
-    <servlet-class>org.demo.DemoServlet</servlet-class>
+    <servlet-name>Test Result</servlet-name>
+    <servlet-class>org.demo.TestResultServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Demo</servlet-name>
-    <url-pattern>/demo/*</url-pattern>
+    <servlet-name>Test Result</servlet-name>
+    <url-pattern>/tests/*</url-pattern>
   </servlet-mapping>
 </web-app>

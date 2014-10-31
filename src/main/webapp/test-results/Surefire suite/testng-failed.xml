@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
+  <test name="Surefire test(failed)" parallel="methods" preserve-order="true">
+    <groups>
+      <run>
+        <include name="running"/>
+        <include name="get-server"/>
+        <include name="server-running"/>
+        <include name="start"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.java.WebApplicationTest">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class>
+      <class name="test.java.StartTest">
+        <methods>
+          <include name="testSetHandler"/>
+          <include name="testMonitor"/>
+          <include name="testThreadStart"/>
+          <include name="testStart"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
