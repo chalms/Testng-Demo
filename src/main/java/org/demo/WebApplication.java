@@ -7,6 +7,7 @@ import org.server.Start;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
+import javax.servlet.RequestDispatcher;
 
 public class WebApplication extends AbstractHandler
 {
@@ -16,9 +17,12 @@ public class WebApplication extends AbstractHandler
                        HttpServletResponse response)
         throws IOException, ServletException
     {
-        response.setContentType("text/html;charset=utf-8");
-        response.setStatus(HttpServletResponse.SC_OK);
+        RequestDispatcher view = request.getRequestDispatcher("/index.html");
+
         baseRequest.setHandled(true);
-        response.getWriter().println("<h1>Hello World</h1>");
-    }
+
+        // don't add your web-app name to the path
+        view.forward(request, response);
+
+}
 }

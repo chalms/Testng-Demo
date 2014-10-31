@@ -1,2 +1,1474 @@
-<h1>TestNG Demo</h1>
-<a href="/hello">Hello Servlet</a>
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .anchor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body .highlight {
+  background: #ffffff;
+}
+
+.markdown-body .highlight .c {
+  color: #999988;
+  font-style: italic;
+}
+
+.markdown-body .highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+
+.markdown-body .highlight .k {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .o {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cp {
+  color: #999999;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+
+.markdown-body .highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.markdown-body .highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+
+.markdown-body .highlight .gd .x {
+  color: #000000;
+  background-color: #ffaaaa;
+}
+
+.markdown-body .highlight .ge {
+  font-style: italic;
+}
+
+.markdown-body .highlight .gr {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .gh {
+  color: #999999;
+}
+
+.markdown-body .highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+
+.markdown-body .highlight .gi .x {
+  color: #000000;
+  background-color: #aaffaa;
+}
+
+.markdown-body .highlight .go {
+  color: #888888;
+}
+
+.markdown-body .highlight .gp {
+  color: #555555;
+}
+
+.markdown-body .highlight .gs {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .gt {
+  color: #aa0000;
+}
+
+.markdown-body .highlight .kc {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kd {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kn {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kp {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kr {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .m {
+  color: #009999;
+}
+
+.markdown-body .highlight .s {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .n {
+  color: #333333;
+}
+
+.markdown-body .highlight .na {
+  color: teal;
+}
+
+.markdown-body .highlight .nb {
+  color: #0086b3;
+}
+
+.markdown-body .highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .no {
+  color: teal;
+}
+
+.markdown-body .highlight .ni {
+  color: purple;
+}
+
+.markdown-body .highlight .ne {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+
+.markdown-body .highlight .nn {
+  color: #555555;
+}
+
+.markdown-body .highlight .nt {
+  color: navy;
+}
+
+.markdown-body .highlight .nv {
+  color: teal;
+}
+
+.markdown-body .highlight .ow {
+  font-weight: bold;
+}
+
+.markdown-body .highlight .w {
+  color: #bbbbbb;
+}
+
+.markdown-body .highlight .mf {
+  color: #009999;
+}
+
+.markdown-body .highlight .mh {
+  color: #009999;
+}
+
+.markdown-body .highlight .mi {
+  color: #009999;
+}
+
+.markdown-body .highlight .mo {
+  color: #009999;
+}
+
+.markdown-body .highlight .sb {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .sc {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .sd {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .s2 {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .se {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .sh {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .si {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .sx {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .sr {
+  color: #009926;
+}
+
+.markdown-body .highlight .s1 {
+  color: #dd1144;
+}
+
+.markdown-body .highlight .ss {
+  color: #990073;
+}
+
+.markdown-body .highlight .bp {
+  color: #999999;
+}
+
+.markdown-body .highlight .vc {
+  color: teal;
+}
+
+.markdown-body .highlight .vg {
+  color: teal;
+}
+
+.markdown-body .highlight .vi {
+  color: teal;
+}
+
+.markdown-body .highlight .il {
+  color: #009999;
+}
+
+.markdown-body .highlight .gc {
+  color: #999;
+  background-color: #EAF2F5;
+}
+
+.markdown-body .octicon {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+</style><title>walkthrough</title></head><body><article class="markdown-body"><h1>
+<a name="user-content-testng---demo" class="anchor" href="#testng---demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TestNG - Demo</h1>
+
+<p><strong>SE 4452A, October 30th 2014</strong></p>
+
+<p>This is a walkthrough for setting up unit and integration tests, and custom testing reports, for Java using TestNG. The commands are displayed for Mac OSX but can be performed using their equivalents in Linux or Windows. </p>
+
+<h4>
+<a name="user-content-getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h4>
+
+<p><strong>Download Sublime Text 3</strong></p>
+
+<p>In the interest of learning more about these types of web applications, we are going to setup this project without using eclipse. Go to <a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a> and install Sublime Text 3, and install the shell command 'sublime' into your bin so that you can open folders in sublime from the command line.</p>
+
+<p><strong>Download Maven</strong> </p>
+
+<p>If you dont have Apache's Maven, download it for Java projects. It allows you to easily download and install open source Java classes to use for your build. Make sure to add the shell command 'mvn' or 'maven' to your bin, to run maven from the command line. Download it at: </p>
+
+<p><a href="http://maven.apache.org/download.cgi">http://maven.apache.org/download.cgi</a></p>
+
+<h4>
+<a name="user-content-setup-project-folder" class="anchor" href="#setup-project-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup Project Folder</h4>
+
+<p>Set up a folder for your project. This folder will need a specific architecture for running maven plugins. It will need a 'pom.xml' file, which effectively describes your maven project and any plugins you are using. Start off by setting up an initial directory structure which looks like this: </p>
+
+<pre><code>AppName
+    |--src
+    |   |--main
+    |      |--java
+    |         |--org
+    |            |--app
+    |                |--WebApplication.java
+    |--test
+    |   |--java
+    |       |--WebApplicationTest.java
+    |
+    |---target
+    |---pom.xml
+</code></pre>
+
+<p>This would correspond to the following bash commands: </p>
+
+<div class="highlight highlight-bash"><pre>    <span class="nv">$ </span>mkdir -p AppName/main/java/org/app
+    <span class="nv">$ </span>touch YourApp/main/java/org/app/WebApplication.java
+    <span class="nv">$ </span>mkdir -p <span class="nb">test</span>/java
+    <span class="nv">$ </span>touch <span class="nb">test</span>/java/WebApplicationTest.java
+    <span class="nv">$ </span>mkdir target
+    <span class="nv">$ </span>touch pom.xml
+</pre></div>
+
+<p>And open them all in sublime with the following command: </p>
+
+<div class="highlight highlight-bash"><pre>    sublime AppName
+</pre></div>
+
+<h4>
+<a name="user-content-setting-up-java_home-environment-variable" class="anchor" href="#setting-up-java_home-environment-variable" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting Up JAVA_HOME environment variable</h4>
+
+<p>Now before we start setting up anything else, lets first set up our JAVA_HOME environment variable in the new project. Change to your project directory. </p>
+
+<div class="highlight highlight-bash"><pre>    <span class="nv">$ </span><span class="nb">cd </span>AppName
+</pre></div>
+
+<p>Now check the contents of your JAVA_HOME environment variable, if nothing displays, then act accordingly. </p>
+
+<div class="highlight highlight-bash"><pre>    <span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$JAVA_HOME</span> <span class="c"># &lt;- show current location of JAVA_HOME</span>
+    <span class="c"># if nothing is diplayed</span>
+    <span class="nv">$ </span>vim ~/.bash_profile
+</pre></div>
+
+<p>'vim' will open current bash_profile, or create one. The ~./bash_profile file  will display (and set) the users custom environment variables. The vim command displays your .bash_profile and thus displayed my computers environment variables. This is my .bash_profile:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/bin:<span class="nv">$PATH</span>
+<span class="o">[[</span> -s <span class="s2">"$HOME/.profile"</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">source</span> <span class="s2">"$HOME/.profile"</span> <span class="c"># Load the default .profile</span>
+<span class="o">[[</span> -s <span class="s2">"$HOME/.rvm/scripts/rvm"</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">source</span> <span class="s2">"$HOME/.rvm/scripts/rvm"</span> <span class="c"># Load RVM into a shell session *as a function*</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/git/bin:<span class="nv">$PATH</span>
+<span class="nb">export </span><span class="nv">PGDATA</span><span class="o">=</span>/usr/share/postgresql/data
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/share/postgresql/data:<span class="nv">$PATH</span>
+</pre></div>
+
+<p>To edit your .bash_profile using 'vim', hit 'a'. Now scroll down to the bottom and append the following:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nb">export </span><span class="nv">JAVA_HOME</span><span class="o">=</span><span class="k">$(</span>/usr/libexec/java_home<span class="k">)</span>
+</pre></div>
+
+<p>Thats it! now hit 'esc' to exit insert mode, and then ':' to enter a the vim command mode. Type 'wq' to write ('w') the new text, then quit ('q') editing the document. We can now test if we added the $JAVA_HOME to the classpath. Yours should look something like the following:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$JAVA_HOME</span>
+/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+</pre></div>
+
+<p>For more vim commands, visit: <a href="http://worldtimzone.com/res/vi.html">http://worldtimzone.com/res/vi.html</a></p>
+
+<h4>
+<a name="user-content-setting-up-testng" class="anchor" href="#setting-up-testng" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting Up TestNG</h4>
+
+<p>In order to set up TestNG correctly, first download the TESTNG jar file from the following link: <a href="http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22testng%22">http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22testng%22</a></p>
+
+<p>Then save somewhere on your computer. I saved mine as ~/Downloads/testng-6.8.8. Yours may be a different version than mine, so just change '6.8.8' to your version for the rest of the commands.</p>
+
+<p>Now, create a folder on your computer to store testng. My folder was /Library/TESTNG. You can create your folder with the command.</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>mkdir /Library/TESTNG
+</pre></div>
+
+<p>Then copy the newly downloaded testng file to your new directory.</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>cp ~/Downloads/testng-6.8.8 /Library/TESTNG/testng-6.8.8
+</pre></div>
+
+<p>Now, you want to add this testng JAR file to the end of your java project classpath. In MAC OSX this classpath is defined by the '$CLASSPATH' environment variable. You can append the testng framework this environment variable by performing the following:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span><span class="nb">export </span><span class="nv">CLASSPATH</span><span class="o">=</span><span class="nv">$CLASSPATH</span>:/Library/TESTNG/testng-6.8.8.jar
+</pre></div>
+
+<h4>
+<a name="user-content-webapplicationjava" class="anchor" href="#webapplicationjava" aria-hidden="true"><span class="octicon octicon-link"></span></a>WebApplication.java</h4>
+
+<p>Temporarily fill in the contents of WebApplication.java like so: </p>
+
+<div class="highlight highlight-java"><pre>    <span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">app</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">WebApplication</span> <span class="o">{</span>
+        <span class="kd">public</span> <span class="kd">class</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Running!"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</pre></div>
+
+<p>And fill in the contents of WebApplicationTest.java like this: </p>
+
+<div class="highlight highlight-java"><pre>    <span class="kn">package</span> <span class="n">test</span><span class="o">.</span><span class="na">java</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">WebApplicationTest</span> <span class="o">{</span>
+
+        <span class="nd">@Test</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testMain</span><span class="o">()</span> <span class="o">{</span>
+            <span class="c1">// we will fill this in later</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</pre></div>
+
+<h4>
+<a name="user-content-maven-setup" class="anchor" href="#maven-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maven Setup</h4>
+
+<p>Now that we have ensured our folder environment is setup correctly, lets download and install the packages we will need to use to build a web server and automated testing environment. Add the following to give your pom.xml a bit of structure moving forward: </p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;project</span> <span class="na">xmlns=</span><span class="s">"http://maven.apache.org/POM/4.0.0"</span>
+         <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span>
+   <span class="na">xsi:schemaLocation=</span><span class="s">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;modelVersion&gt;</span>4.0.0<span class="nt">&lt;/modelVersion&gt;</span>
+
+    <span class="c">&lt;!-- Below should match the package of your WebApplication.java --&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.app<span class="nt">&lt;/groupId&gt;</span>
+
+    <span class="c">&lt;!-- For below, mine was 'testng-demo'  --&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span> '<span class="nt">&lt; SOME</span> <span class="err">OTHER</span> <span class="err">NAME</span> <span class="nt">&gt;</span>' <span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>0.1-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;packaging&gt;</span>jar<span class="nt">&lt;/packaging&gt;</span>
+    <span class="nt">&lt;name&gt;</span> '<span class="nt">&lt; SOME</span> <span class="err">NAME</span> <span class="nt">&gt;</span>' <span class="nt">&lt;/name&gt;</span>
+
+    <span class="c">&lt;!-- You will put your dependencies into the tag below --&gt;</span>
+    <span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;/dependencies&gt;</span>
+
+    <span class="nt">&lt;build&gt;</span>
+        <span class="nt">&lt;testSourceDirectory&gt;</span>src/test/java<span class="nt">&lt;/testSourceDirectory&gt;</span>
+        <span class="c">&lt;!-- You will put your plugins into the tag below --&gt;</span>
+        <span class="nt">&lt;plugins&gt;</span>
+        <span class="nt">&lt;/plugins&gt;</span>
+    <span class="nt">&lt;/build&gt;</span>
+<span class="nt">&lt;/project&gt;</span>
+</pre></div>
+
+<h4>
+<a name="user-content-plugins-and-dependancies" class="anchor" href="#plugins-and-dependancies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugins and Dependancies</h4>
+
+<p><strong>Jetty</strong></p>
+
+<p>We are going to use an asynchronous server from Maven plugin 'Jetty'. Paste the following dependency into your pom.xml: </p>
+
+<div class="highlight highlight-xml"><pre>    <span class="c">&lt;!-- paste this above your dependancies --&gt;</span>
+    <span class="nt">&lt;properties&gt;</span>
+    <span class="nt">&lt;jettyVersion&gt;</span>7.2.0.v20101020<span class="nt">&lt;/jettyVersion&gt;</span>
+    <span class="nt">&lt;/properties&gt;</span>
+
+    <span class="c">&lt;!-- the dependancies tag from above --&gt;</span>
+    <span class="nt">&lt;dependencies&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.eclipse.jetty<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>jetty-server<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>${jettyVersion}<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;/dependencies&gt;</span>
+</pre></div>
+
+<p>And then paste the plugin: </p>
+
+<div class="highlight highlight-xml"><pre><span class="c">&lt;!-- the plugins tag from above --&gt;</span>
+<span class="nt">&lt;plugins&gt;</span>
+    <span class="nt">&lt;plugin&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>org.mortbay.jetty<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>jetty-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+        <span class="nt">&lt;version&gt;</span>${jettyVersion}<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/plugin&gt;</span>
+        <span class="nt">&lt;plugin&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>org.codehaus.mojo<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>exec-maven-plugin<span class="nt">&lt;/artifactId&gt;</span>
+        <span class="nt">&lt;version&gt;</span>1.1<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;executions&gt;</span>
+            <span class="nt">&lt;execution&gt;&lt;goals&gt;&lt;goal&gt;</span>java<span class="nt">&lt;/goal&gt;&lt;/goals&gt;&lt;/execution&gt;</span>
+        <span class="nt">&lt;/executions&gt;</span>
+        <span class="nt">&lt;configuration&gt;</span>
+            <span class="nt">&lt;mainClass&gt;</span>org.server.Start<span class="nt">&lt;/mainClass&gt;</span>
+        <span class="nt">&lt;/configuration&gt;</span>
+    <span class="nt">&lt;/plugin&gt;</span>
+<span class="nt">&lt;/plugins&gt;</span>
+</pre></div>
+
+<p><strong>TestNG</strong></p>
+
+<p>The dependancy:  </p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.testng<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>testng<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>6.3.1<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<p>And the Maven Surefire plugin, to automatically generate html containing information about your testNG results. This declares the group names we will use in our java test files, it specifies that we will allow some tests to run concurrently, and that the maximum number of concurrent threads is 10. </p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;plugin&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>maven-surefire-plugin<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>2.17<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;configuration&gt;</span>
+        <span class="nt">&lt;systemPropertyVariables&gt;</span>
+            <span class="nt">&lt;propertyName&gt;</span>firefox<span class="nt">&lt;/propertyName&gt;</span>
+        <span class="nt">&lt;/systemPropertyVariables&gt;</span>
+        <span class="nt">&lt;groups&gt;</span>running,get-server,server-running,start,stopping<span class="nt">&lt;/groups&gt;</span>
+        <span class="nt">&lt;parallel&gt;</span>methods<span class="nt">&lt;/parallel&gt;</span>
+        <span class="nt">&lt;threadCount&gt;</span>10<span class="nt">&lt;/threadCount&gt;</span>
+    <span class="nt">&lt;/configuration&gt;</span>
+<span class="nt">&lt;/plugin&gt;</span>
+</pre></div>
+
+<p><strong>Apache HTTP Components</strong></p>
+
+<p>Add this to automate HTTP Clients for testing purposes. </p>
+
+<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.apache.httpcomponents<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>httpclient<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>4.1.1<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+
+<h4>
+<a name="user-content-setup-jetty-server" class="anchor" href="#setup-jetty-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup Jetty Server</h4>
+
+<p>Create a folder (package) next to your package 'app'. This server should have two files: 'Start.java' and 'Stop.java'. </p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>mkdir src/main/java/org/server
+<span class="nv">$ </span>touch src/main/java/org/server/Start.java
+<span class="nv">$ </span>touch src/main/java/org/server/Stop.java
+</pre></div>
+
+<p>Paste the following code to create a multithreaded process that creates a server and then monitors it. </p>
+
+<div class="highlight highlight-java"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">server</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletRequest</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletResponse</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.ServletException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.Server</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.Request</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.handler.AbstractHandler</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.demo.WebApplication</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.demo.TestResultServlet</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.OutputStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.InetAddress</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.Socket</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.ServerSocket</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.UnknownHostException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Start</span> <span class="o">{</span>
+
+  <span class="kd">private</span> <span class="kd">static</span> <span class="n">Server</span> <span class="n">server</span><span class="o">;</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span>
+  <span class="o">{</span>
+      <span class="n">Server</span> <span class="n">server</span> <span class="o">=</span> <span class="n">pairServerHandler</span><span class="o">(</span><span class="n">getServer</span><span class="o">(),</span> <span class="n">getDefaultHandler</span><span class="o">());</span>
+      <span class="n">startMonitor</span><span class="o">();</span>
+      <span class="n">server</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+      <span class="n">server</span><span class="o">.</span><span class="na">join</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="n">Server</span> <span class="nf">getServer</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nf">Server</span><span class="o">(</span><span class="n">getServerPort</span><span class="o">());</span> <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getServerPort</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="mi">8080</span><span class="o">;</span> <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getServerSocketPort</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="mi">8079</span><span class="o">;</span> <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">startMonitor</span><span class="o">()</span> <span class="o">{</span> <span class="n">getMonitor</span><span class="o">().</span><span class="na">start</span><span class="o">();</span>  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="n">Server</span> <span class="nf">pairServerHandler</span><span class="o">(</span><span class="n">Server</span> <span class="n">s</span><span class="o">,</span> <span class="n">AbstractHandler</span> <span class="n">h</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">s</span><span class="o">.</span><span class="na">setHandler</span><span class="o">(</span><span class="n">h</span><span class="o">);</span>
+    <span class="k">return</span> <span class="n">s</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="n">AbstractHandler</span> <span class="nf">getDefaultHandler</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nf">WebApplication</span><span class="o">();</span> <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="n">InetAddress</span> <span class="nf">getInetAddress</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span>  <span class="kd">throws</span> <span class="n">UnknownHostException</span> <span class="o">{</span> <span class="k">return</span> <span class="n">InetAddress</span><span class="o">.</span><span class="na">getByName</span><span class="o">(</span><span class="n">name</span><span class="o">);</span> <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="n">ServerSocket</span> <span class="nf">getServerSocket</span><span class="o">(</span><span class="n">String</span> <span class="n">address</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">try</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="k">new</span> <span class="nf">ServerSocket</span><span class="o">(</span><span class="n">getServerSocketPort</span><span class="o">(),</span> <span class="mi">1</span><span class="o">,</span> <span class="n">getInetAddress</span><span class="o">(</span><span class="n">address</span><span class="o">));</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="kd">static</span> <span class="kd">class</span> <span class="nc">MonitorThread</span> <span class="kd">extends</span> <span class="n">Thread</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">ServerSocket</span> <span class="n">socket</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Boolean</span> <span class="n">daemon</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="n">Boolean</span> <span class="n">started</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">MonitorThread</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="n">String</span> <span class="n">address</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="n">setDaemon</span><span class="o">(</span><span class="n">daemon</span><span class="o">);</span>
+        <span class="n">setName</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+        <span class="n">socket</span> <span class="o">=</span> <span class="n">getServerSocket</span><span class="o">(</span><span class="n">address</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"*** running jetty 'stop' thread"</span><span class="o">);</span>
+        <span class="n">started</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="n">Socket</span> <span class="n">accept</span><span class="o">;</span>
+
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">accept</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="na">accept</span><span class="o">();</span>
+            <span class="n">BufferedReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">accept</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">()));</span>
+
+            <span class="n">reader</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"*** stopping jetty embedded server"</span><span class="o">);</span>
+
+            <span class="n">server</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+            <span class="n">accept</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+            <span class="n">socket</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+
+        <span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="n">Thread</span> <span class="nf">getMonitor</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nf">MonitorThread</span><span class="o">(</span><span class="s">"StopMonitor"</span><span class="o">,</span> <span class="s">"127.0.0.1"</span><span class="o">);</span> <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>Then add the following code to 'Stop.java' to stop the server when the class is called:</p>
+
+<div class="highlight highlight-java"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">server</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.OutputStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.InetAddress</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.Socket</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Stop</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="n">Socket</span> <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Socket</span><span class="o">(</span><span class="n">InetAddress</span><span class="o">.</span><span class="na">getByName</span><span class="o">(</span><span class="s">"127.0.0.1"</span><span class="o">),</span> <span class="mi">8079</span><span class="o">);</span>
+        <span class="n">OutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">getOutputStream</span><span class="o">();</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"*** sending jetty stop request"</span><span class="o">);</span>
+        <span class="n">out</span><span class="o">.</span><span class="na">write</span><span class="o">((</span><span class="s">"\r\n"</span><span class="o">).</span><span class="na">getBytes</span><span class="o">());</span>
+        <span class="n">out</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+        <span class="n">s</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>Now, create a default handler for the server in 'WebApplication.java'. Remove the current code and replace it with the following: </p>
+
+<div class="highlight highlight-java"><pre><span class="kn">package</span> <span class="n">org</span><span class="o">.</span><span class="na">demo</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletRequest</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletResponse</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.servlet.ServletException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.server.Start</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.Server</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.Request</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.handler.AbstractHandler</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">WebApplication</span> <span class="kd">extends</span> <span class="n">AbstractHandler</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">handle</span><span class="o">(</span><span class="n">String</span> <span class="n">target</span><span class="o">,</span>
+                       <span class="n">Request</span> <span class="n">baseRequest</span><span class="o">,</span>
+                       <span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span>
+                       <span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">)</span>
+        <span class="kd">throws</span> <span class="n">IOException</span><span class="o">,</span> <span class="n">ServletException</span>
+    <span class="o">{</span>
+        <span class="n">response</span><span class="o">.</span><span class="na">setContentType</span><span class="o">(</span><span class="s">"text/html;charset=utf-8"</span><span class="o">);</span>
+        <span class="n">response</span><span class="o">.</span><span class="na">setStatus</span><span class="o">(</span><span class="n">HttpServletResponse</span><span class="o">.</span><span class="na">SC_OK</span><span class="o">);</span>
+        <span class="n">baseRequest</span><span class="o">.</span><span class="na">setHandled</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+        <span class="n">response</span><span class="o">.</span><span class="na">getWriter</span><span class="o">().</span><span class="na">println</span><span class="o">(</span><span class="s">"&lt;h1&gt;Hello World&lt;/h1&gt;"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>You can test that this server works (and before, clean and install all your packages) by typing:</p>
+
+<pre><code>$ mvn clean packages
+$ mvn install packages
+$ mvn jetty:run
+</code></pre>
+
+<p>You can view the created webpage at http://localhost:8080/ </p>
+
+<h4>
+<a name="user-content-testng-classes" class="anchor" href="#testng-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>TestNG Classes</h4>
+
+<p>Now to test the functionality of this server, we should set up three classes:</p>
+
+<ul>
+<li>StartTest.java</li>
+<li>StopTest.java</li>
+<li>WebApplicationTest.java</li>
+</ul>
+
+<p>Each of these three classes will be tested with TestNG, and will monitor the current state of our code. Create them with the following commands: </p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>touch src/test/java/StartTest.java
+<span class="nv">$ </span>touch src/test/java/StopTest.java
+<span class="nv">$ </span>touch src/test/java/WebApplicationTest.java
+</pre></div>
+
+<p><strong>StartTest.java:</strong> </p>
+
+<p>In StartTest.java, we will enter the methods to test the server, the request handler and the server monitor thread. Start off by pasting the following imports and skeleton class: </p>
+
+<pre><code>package test.java;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.Request;
+import org.eclipse.jetty.server.handler.AbstractHandler;
+import org.server.Start;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.ServerSocket;
+import java.net.UnknownHostException;
+import java.io.IOException;
+import org.eclipse.jetty.server.Connector;
+import org.demo.WebApplication;
+
+public class StartTest {
+  public static org.eclipse.jetty.server.Server server;
+  public static Thread monitor;
+}
+</code></pre>
+
+<p>Now, lets add some methods to test the server. </p>
+
+<p>The following method will first test that the server is of the correct type and exists. </p>
+
+<div class="highlight highlight-java"><pre>  <span class="nd">@Test</span><span class="o">(</span><span class="n">groups</span><span class="o">={</span><span class="s">"get-server"</span><span class="o">})</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testStart</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+    <span class="n">server</span> <span class="o">=</span> <span class="n">Start</span><span class="o">.</span><span class="na">getServer</span><span class="o">();</span>
+    <span class="n">org</span><span class="o">.</span><span class="na">testng</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="n">server</span><span class="o">.</span><span class="na">getClass</span><span class="o">(),</span> <span class="n">Server</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"Server object exists"</span><span class="o">);</span>
+  <span class="o">}</span>
+</pre></div>
+
+<p>Next, we can use two methods to run in concurrent threads as soon as the above method is complete. We can synchronize the execution due to the 'dependsOnGroups tag'. These will test that the monitoring thread was created and has the appropriate thread name, and that the handler was assigned correctly to the server: </p>
+
+<div class="highlight highlight-java"><pre>  <span class="nd">@Test</span><span class="o">(</span><span class="n">groups</span><span class="o">={</span><span class="s">"server-running"</span><span class="o">},</span> <span class="n">dependsOnGroups</span><span class="o">={</span><span class="s">"get-server"</span><span class="o">})</span>
+ <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testMonitor</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+    <span class="n">monitor</span> <span class="o">=</span> <span class="n">Start</span><span class="o">.</span><span class="na">getMonitor</span><span class="o">();</span>
+    <span class="n">org</span><span class="o">.</span><span class="na">testng</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"StopMonitor"</span><span class="o">,</span> <span class="n">monitor</span><span class="o">.</span><span class="na">getName</span><span class="o">(),</span> <span class="s">"Monitor Name"</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="nd">@Test</span><span class="o">(</span><span class="n">groups</span><span class="o">={</span><span class="s">"server-running"</span><span class="o">},</span> <span class="n">dependsOnGroups</span><span class="o">={</span><span class="s">"get-server"</span><span class="o">})</span>
+  <span class="kd">public</span> <span class="kd">static</span>  <span class="kt">void</span> <span class="nf">testSetHandler</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+
+    <span class="n">server</span><span class="o">.</span><span class="na">setHandler</span><span class="o">(((</span><span class="n">AbstractHandler</span><span class="o">)</span> <span class="n">Start</span><span class="o">.</span><span class="na">getDefaultHandler</span><span class="o">()));</span>
+
+    <span class="n">org</span><span class="o">.</span><span class="na">testng</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertNotSame</span><span class="o">(</span><span class="n">server</span><span class="o">.</span><span class="na">getHandler</span><span class="o">().</span><span class="na">getClass</span><span class="o">(),</span> <span class="n">AbstractHandler</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"Server has a handler"</span><span class="o">);</span>
+  <span class="o">}</span>
+</pre></div>
+
+<p>Now add this last method to start the monitor thread and the server thread after the monitor created and the handler assigned. </p>
+
+<div class="highlight highlight-java"><pre>  <span class="nd">@Test</span><span class="o">(</span><span class="n">groups</span><span class="o">={</span><span class="s">"start"</span><span class="o">},</span> <span class="n">dependsOnGroups</span><span class="o">={</span><span class="s">"server-running"</span><span class="o">})</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testThreadStart</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+
+    <span class="n">monitor</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+    <span class="n">server</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+
+    <span class="n">org</span><span class="o">.</span><span class="na">testng</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="kc">true</span><span class="o">,</span> <span class="n">monitor</span><span class="o">.</span><span class="na">isAlive</span><span class="o">(),</span> <span class="s">"Monitor has started"</span><span class="o">);</span>
+
+    <span class="n">org</span><span class="o">.</span><span class="na">testng</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="kc">true</span><span class="o">,</span> <span class="o">(</span><span class="n">server</span><span class="o">.</span><span class="na">isStarted</span><span class="o">()</span> <span class="o">||</span> <span class="n">server</span><span class="o">.</span><span class="na">isStarting</span><span class="o">()),</span> <span class="s">"Server has started"</span><span class="o">);</span>
+  <span class="o">}</span>
+</pre></div>
+
+<p><strong>WebApplicationTest.java</strong></p>
+
+<p>The following test will run after your server has started, and it will issue requests to your website at the specified address. When the webpage is returned by the server, it tests if the webpage contents match what you expect they will:</p>
+
+<div class="highlight highlight-java"><pre><span class="kn">package</span> <span class="n">test</span><span class="o">.</span><span class="na">java</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.testng.Assert</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.testng.annotations.Test</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.server.Start</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.apache.http.HttpResponse</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.apache.http.client.HttpClient</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.apache.http.client.methods.HttpGet</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.apache.http.impl.client.DefaultHttpClient</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">WebApplicationTest</span> <span class="o">{</span>
+
+  <span class="nd">@Test</span><span class="o">(</span><span class="n">groups</span> <span class="o">=</span> <span class="o">{</span><span class="s">"running"</span><span class="o">},</span> <span class="n">dependsOnGroups</span><span class="o">={</span><span class="s">"start"</span><span class="o">})</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">test</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+
+    <span class="n">String</span> <span class="n">userId</span> <span class="o">=</span> <span class="s">"invalid"</span><span class="o">;</span>
+    <span class="n">HttpClient</span> <span class="n">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">DefaultHttpClient</span><span class="o">();</span>
+    <span class="n">HttpGet</span> <span class="n">mockRequest</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">HttpGet</span><span class="o">(</span><span class="s">"http://localhost:8080/"</span><span class="o">);</span>
+    <span class="n">mockRequest</span><span class="o">.</span><span class="na">setHeader</span><span class="o">(</span><span class="s">"http-user"</span><span class="o">,</span> <span class="n">userId</span><span class="o">);</span>
+    <span class="n">HttpResponse</span> <span class="n">mockResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">execute</span><span class="o">(</span><span class="n">mockRequest</span><span class="o">);</span>
+    <span class="n">BufferedReader</span> <span class="n">rd</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">mockResponse</span><span class="o">.</span><span class="na">getEntity</span><span class="o">().</span><span class="na">getContent</span><span class="o">()));</span>
+    <span class="n">String</span> <span class="n">line</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">testString</span> <span class="o">=</span>  <span class="s">"&lt;h1&gt;Hello World&lt;/h1&gt;"</span><span class="o">;</span>
+
+    <span class="k">while</span> <span class="o">((</span><span class="n">line</span> <span class="o">=</span> <span class="n">rd</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="n">str</span> <span class="o">+=</span> <span class="n">line</span><span class="o">;</span>
+    <span class="n">org</span><span class="o">.</span><span class="na">testng</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="kc">true</span><span class="o">,</span> <span class="n">str</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="n">testString</span><span class="o">),</span> <span class="s">"Website Output Correct!"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p><strong>StopTest.java</strong></p>
+
+<p>Adding the following to StopTest.java will close the server after our WebApplicationTest is complete. </p>
+
+<div class="highlight highlight-java"><pre>
+<span class="kn">package</span> <span class="n">test</span><span class="o">.</span><span class="na">java</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">org.testng.Assert</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.testng.annotations.Test</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.Server</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.Request</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.eclipse.jetty.server.handler.AbstractHandler</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.server.Stop</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.OutputStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.InetAddress</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.Socket</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.ServerSocket</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.net.UnknownHostException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">StopTest</span> <span class="o">{</span>
+
+  <span class="nd">@Test</span><span class="o">(</span><span class="n">groups</span> <span class="o">=</span> <span class="o">{</span><span class="s">"stopping"</span><span class="o">},</span> <span class="n">dependsOnGroups</span> <span class="o">=</span> <span class="o">{</span> <span class="s">"running"</span> <span class="o">})</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testStop</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+      <span class="n">Stop</span><span class="o">.</span><span class="na">main</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span>
+     <span class="c1">// org.testng.Assert.assertEquals(true, true, "Server is stopped!");</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p><strong>Running The Tests</strong></p>
+
+<p>Now, you can run the above tests with the command:</p>
+
+<pre><code>$ mvn test
+</code></pre>
+
+<h4>
+<a name="user-content-automatically-display-test-results" class="anchor" href="#automatically-display-test-results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Automatically Display Test Results</h4>
+
+<p>When I enter the command,</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>runtests
+</pre></div>
+
+<p>from my project folder, chrome automatically displays the test results to me. It also saves the test results as a page that can be served up by the website. In order to do this, first run:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>mvn <span class="nb">test</span>
+</pre></div>
+
+<p>This will create a new folder in your '/target' directory named '/surefire-reports'. If you open the file '/target/surefire-reports/index.html' in chrome, it will display the html results of your last unit test.</p>
+
+<p>Now, lets build the executable.</p>
+
+<h4>
+<a name="user-content-creating-the-sh-file" class="anchor" href="#creating-the-sh-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating the .sh file</h4>
+
+<p>Before we go any furthur, create a folder for the test results to be served as a webpage:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>mkdir -p src/main/webapp/test-results
+</pre></div>
+
+<p>Now, create a file in the root your project folder called 'test.sh'. Make this folder and executable and open it in sublime. This will be used to run the processes required to write and display test result content.</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>touch test.sh
+<span class="nv">$ </span>chmod +x test.sh
+<span class="nv">$ </span>sublime test.sh
+</pre></div>
+
+<p>We now want to fill this shell script with some code to automate running the test and displaying the outputs. We need to add some conditionals to avoid attempting to display or copy the test contents if they are not created due to a failure in maven.</p>
+
+<p>In test.sh:</p>
+
+<div class="highlight highlight-bash"><pre><span class="c">#!/bin/sh</span>
+<span class="k">if</span> mvn <span class="nb">test</span> <span class="p">;</span> <span class="k">then</span>
+  <span class="k">if</span> cp -r target/surefire-reports/* src/main/webapp/test-results <span class="p">;</span> <span class="k">then</span>
+    <span class="k">if</span> cp -r src/main/webapp/my-css.css src/main/webapp/test-results/testng.css<span class="p">;</span> <span class="k">then</span>
+      open src/main/webapp/test-results/index.html
+    <span class="k">fi</span>
+  <span class="k">fi</span>
+<span class="k">fi</span>
+</pre></div>
+
+<p>The line '#!/bin/sh' tells the computer that the file is a shell script. 'mvn test' runs the test cases. The command 'cp -r target/surefire-reports/* src/main/webapp/test-results' copy's the contents of the surefire output directory to a directory that can be easily served by the web app. The command after that replaces the stylesheet produced by surefire, with my custom stylesheet. The line 'open src/main/webapp/test-results/index.html' opens the 'index.html' file from that directory in your browser.</p>
+
+<p>You can test that this file works correctly by entering the command:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>./test.sh
+</pre></div>
+
+<h4>
+<a name="user-content-creating-a-set-of-shell-commands-to-run-in-any-java-project" class="anchor" href="#creating-a-set-of-shell-commands-to-run-in-any-java-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating a set of shell commands to run in any java project</h4>
+
+<p>To save this file as a shell command, there are a few things we must do. First, create an area in your computer where you want to store call shell commands for your java projects. I set mine to '.java'.</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>mkdir ~/.java
+</pre></div>
+
+<p>Next, create a folder called 'bin' inside the '.java' folder, where you will put all your executable files.</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>mkdir ~/.java/bin
+</pre></div>
+
+<p>Then add this new 'bin' folder to your $PATH environment variable. This $PATH environment variable stores the custom commands from different '.sh' files, in many different 'bin' folders across your computer. You can append to the PATH variable with the following command: 'PATH=$PATH:{absolute path to the bin folder you want to add}'. So for my '.java/bin', I ran the following command:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/Users/achalmers/.java/bin
+</pre></div>
+
+<h4>
+<a name="user-content-adding-a-sh-file-your-bin" class="anchor" href="#adding-a-sh-file-your-bin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adding a .sh file your bin</h4>
+
+<p>The last step is to move our './tests.sh' file to our newly created bin, and give this command the name we desire. When placing the tests.sh in my 'bin' folder, I will no longer need the '.sh' at the end to run it. I can effectively call it whatever I want, and in this case I chose the name <em>runtests</em>.</p>
+
+<p>All you have to do is move the './tests.sh' file to the new 'bin' with your custom filename:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>mv tests.sh /Users/achalmers/.java/bin/runtests
+</pre></div>
+
+<h4>
+<a name="user-content-run-your-testing-application" class="anchor" href="#run-your-testing-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run Your Testing Application!</h4>
+
+<p>Enter the command:</p>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>runtests
+</pre></div>
+
+<p><em>And Voila.</em></p>
+</article></body></html>

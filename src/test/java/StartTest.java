@@ -24,7 +24,7 @@ public class StartTest {
   @Test(groups={"get-server"})
   public static void testStart() throws Exception {
     server = Start.getServer();
-    org.testng.Assert.assertEquals(server.getClass(), Server.class, "Server is running");
+    org.testng.Assert.assertEquals(server.getClass(), Server.class, "Server object exists");
   }
 
   @Test(groups={"server-running"}, dependsOnGroups={"get-server"})

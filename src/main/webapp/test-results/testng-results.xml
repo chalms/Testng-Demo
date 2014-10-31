@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="410" started-at="2014-10-31T00:17:36Z" finished-at="2014-10-31T00:17:37Z">
+  <suite name="Surefire suite" duration-ms="1509" started-at="2014-10-31T02:20:09Z" finished-at="2014-10-31T02:20:11Z">
     <groups>
       <group name="running">
-        <method signature="WebApplicationTest.test()[pri:0, instance:test.java.WebApplicationTest@7a79be86]" name="test" class="test.java.WebApplicationTest"/>
+        <method signature="WebApplicationTest.test()[pri:0, instance:test.java.WebApplicationTest@880ec60]" name="test" class="test.java.WebApplicationTest"/>
       </group>
       <group name="get-server">
-        <method signature="StartTest.testStart()[pri:0, instance:test.java.StartTest@880ec60]" name="testStart" class="test.java.StartTest"/>
+        <method signature="StartTest.testStart()[pri:0, instance:test.java.StartTest@3f3afe78]" name="testStart" class="test.java.StartTest"/>
       </group>
       <group name="server-running">
-        <method signature="StartTest.testMonitor()[pri:0, instance:test.java.StartTest@880ec60]" name="testMonitor" class="test.java.StartTest"/>
-        <method signature="StartTest.testSetHandler()[pri:0, instance:test.java.StartTest@880ec60]" name="testSetHandler" class="test.java.StartTest"/>
+        <method signature="StartTest.testMonitor()[pri:0, instance:test.java.StartTest@3f3afe78]" name="testMonitor" class="test.java.StartTest"/>
+        <method signature="StartTest.testSetHandler()[pri:0, instance:test.java.StartTest@3f3afe78]" name="testSetHandler" class="test.java.StartTest"/>
+      </group>
+      <group name="stopping">
+        <method signature="StopTest.testStop()[pri:0, instance:test.java.StopTest@7a79be86]" name="testStop" class="test.java.StopTest"/>
       </group>
       <group name="start">
-        <method signature="StartTest.testThreadStart()[pri:0, instance:test.java.StartTest@880ec60]" name="testThreadStart" class="test.java.StartTest"/>
+        <method signature="StartTest.testThreadStart()[pri:0, instance:test.java.StartTest@3f3afe78]" name="testThreadStart" class="test.java.StartTest"/>
       </group>
     </groups>
-    <test name="Surefire test" duration-ms="410" started-at="2014-10-31T00:17:36Z" finished-at="2014-10-31T00:17:37Z">
+    <test name="Surefire test" duration-ms="1509" started-at="2014-10-31T02:20:09Z" finished-at="2014-10-31T02:20:11Z">
       <class name="test.java.WebApplicationTest">
-        <test-method status="PASS" signature="test()[pri:0, instance:test.java.WebApplicationTest@7a79be86]" name="test" duration-ms="278" depends-on-groups="start" started-at="2014-10-31T00:17:36Z" finished-at="2014-10-31T00:17:37Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:test.java.WebApplicationTest@880ec60]" name="test" duration-ms="1064" depends-on-groups="start" started-at="2014-10-31T02:20:10Z" finished-at="2014-10-31T02:20:11Z">
         </test-method>
       </class>
       <class name="test.java.StartTest">
-        <test-method status="PASS" signature="testStart()[pri:0, instance:test.java.StartTest@880ec60]" name="testStart" duration-ms="58" started-at="2014-10-31T00:17:36Z" finished-at="2014-10-31T00:17:36Z">
+        <test-method status="PASS" signature="testStart()[pri:0, instance:test.java.StartTest@3f3afe78]" name="testStart" duration-ms="214" started-at="2014-10-31T02:20:09Z" finished-at="2014-10-31T02:20:10Z">
         </test-method>
-        <test-method status="PASS" signature="testMonitor()[pri:0, instance:test.java.StartTest@880ec60]" name="testMonitor" duration-ms="9" depends-on-groups="get-server" started-at="2014-10-31T00:17:36Z" finished-at="2014-10-31T00:17:36Z">
+        <test-method status="PASS" signature="testMonitor()[pri:0, instance:test.java.StartTest@3f3afe78]" name="testMonitor" duration-ms="24" depends-on-groups="get-server" started-at="2014-10-31T02:20:10Z" finished-at="2014-10-31T02:20:10Z">
         </test-method>
-        <test-method status="PASS" signature="testSetHandler()[pri:0, instance:test.java.StartTest@880ec60]" name="testSetHandler" duration-ms="1" depends-on-groups="get-server" started-at="2014-10-31T00:17:36Z" finished-at="2014-10-31T00:17:36Z">
+        <test-method status="PASS" signature="testSetHandler()[pri:0, instance:test.java.StartTest@3f3afe78]" name="testSetHandler" duration-ms="0" depends-on-groups="get-server" started-at="2014-10-31T02:20:10Z" finished-at="2014-10-31T02:20:10Z">
         </test-method>
-        <test-method status="PASS" signature="testThreadStart()[pri:0, instance:test.java.StartTest@880ec60]" name="testThreadStart" duration-ms="47" depends-on-groups="server-running" started-at="2014-10-31T00:17:36Z" finished-at="2014-10-31T00:17:36Z">
+        <test-method status="PASS" signature="testThreadStart()[pri:0, instance:test.java.StartTest@3f3afe78]" name="testThreadStart" duration-ms="149" depends-on-groups="server-running" started-at="2014-10-31T02:20:10Z" finished-at="2014-10-31T02:20:10Z">
+        </test-method>
+      </class>
+      <class name="test.java.StopTest">
+        <test-method status="PASS" signature="testStop()[pri:0, instance:test.java.StopTest@7a79be86]" name="testStop" duration-ms="4" depends-on-groups="running" started-at="2014-10-31T02:20:11Z" finished-at="2014-10-31T02:20:11Z">
         </test-method>
       </class>
     </test>
